@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!-- saved from url=(0055)index.html -->
 <html  lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta  charset="utf-8">
@@ -74,10 +74,10 @@
 		<div  class="navbar">
 			<div  class="navbar-inner">
 				<ul  class="nav pull-right">
-					<li><a  href="{:U(GROUP_NAME .'/Index/logout')}"  target="_self">退出</a></li>
+					<li><a  href="<?php echo U(GROUP_NAME .'/Index/logout');?>"  target="_self">退出</a></li>
 					<li><a  href="__ROOT__"  target="_blank">网站主页</a></li>
-                    <li><a  href="javascript:;"  target="_blank" onclick="jprompt('{:U(GROUP_NAME .'/Index/clearallcache')}')">修改密码</a></li>
-                    <li><a href="javascript:;" onclick="jconfirm('','确定清除默认所有的缓冲吗?','{:U(GROUP_NAME .'/Index/clearallcache')}')">清除缓存</a></li>
+                    <li><a  href="javascript:;"  target="_blank" onclick="jprompt('<?php echo U(GROUP_NAME .'/Index/clearallcache');?>')">修改密码</a></li>
+                    <li><a href="javascript:;" onclick="jconfirm('','确定清除默认所有的缓冲吗?','<?php echo U(GROUP_NAME .'/Index/clearallcache');?>')">清除缓存</a></li>
 				</ul>
 					<div class="brand"><span class="first"></span> <span  class="second">IUANCMS</span></div>
 			</div>
@@ -89,20 +89,16 @@
         	<form  class="search form-inline">
             	<input  type="text"  placeholder="Search...">
         	</form>
-    		<volist name="node" id="v">
-        		<a  href="index.html#{$v.name}"  class="nav-header collapsed"  data-toggle="collapse"><i  class="icon-dashboard"></i>{$v.title}</a>
-        			<ul  id="{$v.name}"  class="nav nav-list collapse"  style="height: 0px;">
-            			<volist name='v[node]' id='value'>
-                			<li><a  href="{:U(GROUP_NAME .'/'.$v[name].'/'.$value[name])}">{$value.title}</a></li>
-            			</volist>
-        			</ul>
-    		</volist>
-        	<!-- <a href="{:U(GROUP_NAME .'/Index/logout')}" class="nav-header"><i class="icon-question-sign"></i>退出</a>
+    		<?php if(is_array($node)): $i = 0; $__LIST__ = $node;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><a  href="index.html#<?php echo ($v["name"]); ?>"  class="nav-header collapsed"  data-toggle="collapse"><i  class="icon-dashboard"></i><?php echo ($v["title"]); ?></a>
+        			<ul  id="<?php echo ($v["name"]); ?>"  class="nav nav-list collapse"  style="height: 0px;">
+            			<?php if(is_array($v[node])): $i = 0; $__LIST__ = $v[node];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$value): $mod = ($i % 2 );++$i;?><li><a  href="<?php echo U(GROUP_NAME .'/'.$v[name].'/'.$value[name]);?>"><?php echo ($value["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+        			</ul><?php endforeach; endif; else: echo "" ;endif; ?>
+        	<!-- <a href="<?php echo U(GROUP_NAME .'/Index/logout');?>" class="nav-header"><i class="icon-question-sign"></i>退出</a>
         	<a  href="http://www.w3cdream.com" target="_black" class="nav-header"><i  class="icon-comment"></i>答疑</a> -->
     	</div>
 	</div>
   <div id="right">
-		<iframe name="iframe" src="{:U(GROUP_NAME .'/Index/main')}"></iframe>
+		<iframe name="iframe" src="<?php echo U(GROUP_NAME .'/Index/main');?>"></iframe>
   </div>
 </body>
 </html>

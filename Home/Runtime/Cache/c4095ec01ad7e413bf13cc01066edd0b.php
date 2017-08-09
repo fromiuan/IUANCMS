@@ -10,7 +10,6 @@
 <link href="__TMPL__/Css/default.css" rel="stylesheet" type="text/css"/>
 <script src="__TMPL__/Js/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="__TMPL__/Js/jquery.KinSlideshow-1.1.js" type="text/javascript"></script>
-<script src="__TMPL__/Js/hd.js" type="text/javascript"></script>
 <script src="__TMPL__/Js/common.js" type="text/javascript"></script>
 <script src="__TMPL__/Js/marquee.js" type="text/javascript"></script>
 </head>
@@ -149,7 +148,7 @@
 <p>Powered by <b>IUANcms <a href="http://www.waikucms.com"  target="_blank"><?php echo C('SOFT_VERSION');?></a></b> </p>
 </div>
 </div>
-<script language="javascript" src="__THEME__/js/language.js"></script>
+<script language="javascript" src="__TMPL__/js/language.js"></script>
 
 </body>
 </html>

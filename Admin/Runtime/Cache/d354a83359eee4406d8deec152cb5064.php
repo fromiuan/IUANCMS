@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,7 +18,7 @@
 	window.onload = function (){
 		window.UEDITOR_CONFIG.initialFrameWidth = 900;
 		window.UEDITOR_CONFIG.initialFrameHeight = 20;
-		window.UEDITOR_CONFIG.imageUrl = "{:U(GROUP_NAME . '/Blog/upload')}";
+		window.UEDITOR_CONFIG.imageUrl = "<?php echo U(GROUP_NAME . '/Blog/upload');?>";
       	window.UEDITOR_CONFIG.imagePath = "__ROOT__/Uploads/";
       	window.UEDITOR_CONFIG.imageManagerPath = "__ROOT__/";
       	//window.alert(window.UEDITOR_CONFIG.imageManagerPath);
@@ -27,7 +27,7 @@
 </SCRIPT>
 </head>
 <body>
-	<form action="{:U(GROUP_NAME . '/Blog/addBlog')}" method="post" enctype="multipart/form-data">
+	<form action="<?php echo U(GROUP_NAME . '/Blog/addBlog');?>" method="post" enctype="multipart/form-data">
 		<table class="table">
 			<tr>
 				<th colspan="2">博文发布</th>
@@ -37,21 +37,15 @@
 				<td>
 					<select name="cid">
 						<option value="0">===请选择分类===</option>
-						<foreach name="cate" item="v">
-							<option value="{$v.id}" >{$v.html}{$v.name}</option>
-						</foreach>
+						<?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" ><?php echo ($v["html"]); echo ($v["name"]); ?></option><?php endforeach; endif; ?>
 					</select>
 				</td>
 			</tr>
 			<tr>
 				<td align="right">博文属性</td>
 				<td>
-					<volist name="flag" id="v" mod="2">
-					<input type="checkbox" value="{$key}" name="aid[]" /> {$v}
-					</volist>
-					<!-- <foreach name="attr" item='v'>
-						<input type="checkbox" value="{$v.id}" name="aid[]" <if condition="$v['id'] eq 1"> checked</if>> {$v.name}　
-					</foreach> -->
+					<?php if(is_array($flag)): $i = 0; $__LIST__ = $flag;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><input type="checkbox" value="<?php echo ($key); ?>" name="aid[]" /> <?php echo ($v); endforeach; endif; else: echo "" ;endif; ?>
+					<!-- <?php if(is_array($attr)): foreach($attr as $key=>$v): ?><input type="checkbox" value="<?php echo ($v["id"]); ?>" name="aid[]" <?php if($v['id'] == 1): ?>checked<?php endif; ?>> <?php echo ($v["name"]); ?>　<?php endforeach; endif; ?> -->
 				</td>
 			</tr>
 			<tr>

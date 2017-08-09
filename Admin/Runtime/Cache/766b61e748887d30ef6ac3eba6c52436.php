@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <!-- saved from url=(0055)index.html -->
 <html  lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta  charset="utf-8">
@@ -19,7 +19,7 @@
   window.onload = function (){
     window.UEDITOR_CONFIG.initialFrameWidth = 660;
     window.UEDITOR_CONFIG.initialFrameHeight = 200;
-    window.UEDITOR_CONFIG.imageUrl = "{:U(GROUP_NAME . '/Blog/upload')}";
+    window.UEDITOR_CONFIG.imageUrl = "<?php echo U(GROUP_NAME . '/Blog/upload');?>";
     window.UEDITOR_CONFIG.imagePath = "__ROOT__/Uploads/";
     window.UEDITOR_CONFIG.imageManagerPath = "__ROOT__/";
     window.UEDITOR_CONFIG.maximumWords = 200;
@@ -69,21 +69,21 @@
             <div  class="stat-widget-container">
                 <div  class="stat-widget">
                     <div  class="stat-button">
-                        <p  class="title">{$Blog}</p>
+                        <p  class="title"><?php echo ($Blog); ?></p>
                         <p  class="detail">文章</p>
                     </div>
                 </div>
 
                 <div  class="stat-widget">
                     <div  class="stat-button">
-                        <p  class="title">{$User}</p>
+                        <p  class="title"><?php echo ($User); ?></p>
                         <p  class="detail">用户</p>
                     </div>
                 </div>
 
                 <div  class="stat-widget">
                     <div  class="stat-button">
-                        <p  class="title">{$Theme}</p>
+                        <p  class="title"><?php echo ($Theme); ?></p>
                         <p  class="detail">主题</p>
                     </div>
                 </div>
