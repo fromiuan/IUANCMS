@@ -1,0 +1,6 @@
+@import url("public.css");
+html{overflow-y: hidden;}
+#top{height:40px;border-bottom: solid 2px #666;overflow: hidden; position: relative;}
+/**左侧**/
+#left{width:210px;float:left; overflow-x:hidden;overflow-y:auto;border-right: solid 1px #dcdcdc;}
+#right{float:right;overflow: hidden;background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e6e6e6), color-stop(1, #ffffff));}

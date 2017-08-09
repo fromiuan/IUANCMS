@@ -1,0 +1,60 @@
+<div id="minibg">
+    <div id="mini">
+	<div id="dlt"><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://'+window.location.host+'');"><font color="black">设为首页</font></a>|<a onClick="window.external.AddFavorite(location.href,document.title)"><font color="black">加入收藏</font></a>|<a id="StranLink">繁体中文</a></div>
+	
+         <div id="notice">
+		 <dl id="marquee">
+           <iuan:arclist row='5' orderby='pubdate desc'>
+		   <dt><a href="<field name='arcurl'/>"><field name='title'/></a></dt>
+		   </iuan:arclist>
+         </dl>
+		 </div>
+		 <script type="text/javascript">
+				<!--
+				new Marquee("marquee",0,3,300,24,50,3000,3000)
+				//-->
+			</script>
+			
+    <div id="mini2"><script language="javascript" src="__TMPL__/Js/date.js"></script></div>
+	</div>
+</div>
+
+	<div id="head">
+		<div id="logo">
+			<img src="__TMPL__/Images/logo.png"/>
+		</div>
+		<div id="banner">
+		<img src="__TMPL__/Images/8937772.gif" border="0"/>
+		</div>
+	</div>
+	<div id="menu_out">
+		<div id="menu_in">
+			<div id="menu">
+				<ul id="nav">
+					<LI><A class="nav_on" id="mynav0" onmouseover="javascript:qh(0);" href="./"><SPAN>首 页</SPAN></A></LI>
+					<iuan:arctype type='top' row='9'>
+					<li class="menu_line"></li>
+					<li><a href="<field name='typeurl'/>" onmouseover="javascript:qh({$i});" id="mynav{$i}" class="nav_off"><span><field name='name'/></span></a></li>
+					</iuan:arctype>
+				</ul>
+				<div id="menu_con">
+					<div id="qh_con0" style="DISPLAY: block">
+						<ul></ul>
+					</div>
+				<iuan:arctype type='top' row='9'>
+					<div id="qh_con{$i}" style="DISPLAY: none">
+						<ul>
+						<iuan:arctype typeid="~typeid~" row='9' key='j'>
+							<li><a href="<field name='typeurl'/>"><span><field name='name'/></span></A></LI><LI class="menu_line{$i}"></LI>
+						</iuan:arctype>
+						</ul>
+					</div>
+			</iuan:arctype>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<div id="positionbg">
+	<div id="position"><iuan:field name="position"/></div>
+	<div id="sousuo"></div>
+</div>

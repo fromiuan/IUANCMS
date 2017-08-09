@@ -1,0 +1,682 @@
+.bb{/*蓝色星座爱情网*/border-left:1px solid #9BC9DF;border-right:1px solid #9BC9DF;zoom:1;padding-bottom:0px;background:#DBEDF5;}
+.bb_1,.bb_2,.bb_3,.bb_4,.bb_5{height:1px;overflow:hidden;font-size:0;margin:0 1px;border:0 solid #9BC9DF;}
+.bb_1{background:#9BC9DF;margin:0 3px;}
+.bb_5,.bb_2{border-left-width:2px;border-right-width:2px;}
+.bb_4,.bb_3{border-left-width:1px;border-right-width:1px;}
+.bb_2,.bb_3{background:#DBEDF5;}
+.bb_4,.bb_5{background:#DBEDF5/*可以变动*/;}
+
+.rr{/*红色星座爱情网*/border-left:1px solid #E5ADA7;border-right:1px solid #E5ADA7;zoom:1;padding-bottom:0px;background:#FED6D2;}
+.rr_1,.rr_2,.rr_3,.rr_4,.rr_5{height:1px;overflow:hidden;font-size:0;margin:0 1px;border:0 solid #E5ADA7;}
+.rr_1{background:#E5ADA7;margin:0 3px;}
+.rr_5,.rr_2{border-left-width:2px;border-right-width:2px;}
+.rr_4,.rr_3{border-left-width:1px;border-right-width:1px;}
+.rr_2,.rr_3{background:#FED6D2;}
+.rr_4,.rr_5{background:#FED6D2/*可以变动*/;} 
+
+
+.cp{/*黄色星座爱情网*/border-left:1px solid #FCD372;border-right:1px solid #FCD372;padding-bottom:0px;zoom:1;background:#FDE7A2;}
+.cp_1,.cp_2,.cp_3,.cp_4,.cp_5{height:1px;overflow:hidden;font-size:0;margin:0 1px;border:0 solid #FCD372;}
+.cp_1{background:#FCD372;margin:0 3px;}
+.cp_5,.cp_2{border-left-width:2px;border-right-width:2px;}
+.cp_4,.cp_3{border-left-width:1px;border-right-width:1px;}
+
+.cp_2,.cp_3{background:#FDE7A2;}
+.cp_4,.cp_5{background:#FDE7A2;/*可以变动*/}
+
+/*圆角眉头定义星座爱情网*/
+
+.place{/*黄色星座爱情网*/border-left:1px solid #FCD372;border-right:1px solid #FCD372;padding-bottom:0px;zoom:1;background:#FDE7A2;
+padding-left:10px;height:24px;line-height:24px;font-size:14px;font-weight:normal;color:blue;}
+
+
+.place strong{color:green;font-weight:normal;letter-spacing:1px;}
+.place a{color:blue;margin:0px 2px;}
+.place a:link{color:blue;margin:0px 2px;}
+
+
+/*---------- js文件浮动定义 ---------*/
+#span_gad1{float:right; }#span_gad4{float:right; }#span_baiduad{float:right; }
+#span_ggad{float:right; }#span_lltj{float:right; }#span_lltj555{float:right; }
+
+#span_gad6{float:right; }#span_gad7{float:right; }
+
+/*---------- 广告宽度高度定义 ---------*/
+#gad1{width:600px;margin-left:0px;display:table;padding-left:10px;}
+#gad4{width:600px;height:15px;margin-left:0px;display:table;padding-left:10px;}
+#ggad{width:270px;margin-left:0px;}
+#baiduad{width:265px;height:600px;margin-left:0px;border:1px solid blue; text-align:center;}
+
+
+#lltj{width:30px;display:-moz-inline-box;display:inline-block; }
+#gad6{}
+#gad7{}
+
+/*---------- 百度搜索定义 ---------*/
+.searchbox{}
+.searchbox{width: 908px/*绿色变动*/;
+    clear: both;
+    height: 55px;
+    margin:0px 10px 10px 10px/*绿色变动*/;
+    border: 1px solid #abb8be;
+    border-width: 0 1px 0;
+    background: url(nav.png) repeat-x 0 -100px;}
+
+.searchbox * {margin:0px;padding:0px;} 
+.searchbox .key{padding: 4px 24px;/*新加*/
+    float: left; width: 500px;height: 45px;overflow: hidden;margin-top: 0px;}
+.searchbox .search{padding-top:17px/*IE6下用padding*/;padding-right:17px/*绿色变动*/;float:right;text-align:right; font-size:14px;}
+.searchbox .search input {vertical-align:middle; font-size:14px;}
+.searchbox .search input.textbox {background:#fff url(../images2009/icon_search.gif) no-repeat 2px; border:1px solid #b4b4b4; margin-left:5px; padding:2px 2px 2px 22px;width:140px;line-height: 19px;height:17px/*绿色变动*/;color: #ccc;/*暗色*/margin-top:-2px;}
+
+.searchbox .search input.button{margin-top:-3px;/*绿色变动*/}
+.searchbox .key a{color:#333;padding:5px 4px;}
+
+
+
+@charset "gb2312";
+
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, 
+h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, 
+form, legend, fieldset, input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: inherit;
+}
+ol, ul {
+    list-style: none;
+}
+fieldset, img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th {
+    text-align: left;
+}
+
+body {
+    color: #333;
+    background: url() repeat-x #deebf3/*-注销掉--*/;
+    text-align: center;
+    font: 12px/1.5 Tahoma, Helvetica, Arial, sans-serif;
+}
+
+/*
+body {
+    color: #333;
+    background: url(body_bg2.jpg) repeat-x #FFFAD2; /*#deebf3*/
+    text-align: center;
+    font: 12px/1.5 Tahoma, Helvetica, Arial, sans-serif;
+}
+*/
+.cztopbg{
+	background-image: url(cztopbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 50px;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.f14{
+    font-size:12px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+/*\*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/**/
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+html, body {
+    height: 100%;
+}
+* html .container {
+    height: 100%;
+}
+.container {
+    width: 930px;
+    min-height: 100%;
+    margin: auto;
+    text-align: left;
+    background: #fff;
+}
+.container .wrap {
+    margin: 0 10px;
+}
+
+
+#top_img{
+    margin: 10px 10px;
+}
+
+.col1, .col2, .col3, .col4, .col5, .news_sort {
+    float: left;
+    margin-right: 10px;
+}
+.layout-cols2 .col1 {
+    width: 630px;
+    overflow:hidden;
+}
+.layout-cols2 .col2 {
+    width: 270px;
+    margin-right: 0;
+    overflow:hidden;
+}
+
+.layout-cols2, .layout-cols3 {
+    margin-bottom: 0 !important;
+}
+
+
+
+
+/* Header  
+==========================================================*/
+.header {margin: 0 10px 5px;
+    
+}
+.topnav {
+    position: relative;
+    margin: 0 -10px 5px;
+    padding: 0 15px;
+    height: 2em;
+    line-height: 2;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e3e3e3;
+}
+.topnav, .topnav a:link, .topnav a:visited {
+    color: #666;
+}
+.topnav a:hover, .topnav a:active {
+    color: #036;
+    text-decoration: underline;
+}
+.topnav span{float:right;/*新加浮动定义*/}
+
+
+
+.brand, .ad-banner {
+    float: left;
+    margin-right: 7px;
+}
+.ad-banner {
+    width: 468px;
+    height: 60px;
+    overflow: hidden;
+}
+.ad-text {
+    float: right;
+    width: 252px;
+    height: 58px;
+    line-height: 1.6;
+    background: white; 
+}
+.ad-text li {
+    width: 49.9%;
+    float: left;
+    text-indent: 3px;
+    white-space: nowrap;
+}
+.brand h1.site-name {
+    display: none;
+}
+.brand a img {
+    display: block;
+}
+
+/* Nav导航定义
+==========================================================*/
+
+
+.nav {margin: 5px 10px 0px;/*绿色变动*/position: relative;
+    width: 910px;height: 29px;/*====IE6下必须定义宽度高度====*/}
+
+.navinner {}
+
+.navinner ul.navlist a {}
+.navinner ul.navlist a:hover {}
+.navinner ul.navlist {height: 29px;
+    padding-left: 6px;
+    border: 1px solid #3bbe32;
+    border-width: 0 1px 0;
+    background: #79dd85 url(nav.png) repeat-x 0 -2px;}
+
+.navinner ul.navlist li {float: left;
+    padding-left: 2px;
+    margin-right: -2px;
+    background: url(nav.png) no-repeat 0 -33px;}
+
+.navinner ul.navlist li a{ position: relative;font-size:14px/*绿色变动*/;font-weight:bold;
+    margin-top: -2px;
+    float: left;
+    height: 31px;
+    line-height: 35px;
+    padding: 0 12px/*绿色变动*/;
+    overflow:hidden;}
+
+.navinner ul.navlist li a:link, .navinner ul.navlist li a:visited {color: #fff;}
+
+.navinner ul.navlist li a:hover,.navinner li.current a,.navinner li.current a:hover{
+        padding: 0 11px/*绿色变动*/;
+    border: 1px solid #abb8be;
+    border-width: 0 1px 0;
+    text-decoration: none;
+    color: #3f535e !important;
+    background: #fff url(nav.png) repeat-x 0 -62px;}
+
+.navinner li.home {margin-left:0px;}
+
+
+/* Note
+==========================================================*/
+.note {
+    margin: 0 15px 10px;
+	color:#666666;
+}
+.note span{
+	float:right;
+}
+
+
+
+
+/* Sitemap Footer#313131
+==========================================================*/
+a:link{
+	color:;
+	text-decoration:none;
+}
+a:visited{
+	color:;
+	text-decoration:none;
+}
+a:hover{
+	color:#BF001F;
+	text-decoration:none;
+}
+.weizhi{/*-注销掉--*/
+	border:1px solid #B0C7DD;
+	background:#E1EFFB;
+	padding:0px 15px;
+	height:30px;
+	line-height:30px;
+	margin:0px 10px 10px 10px;
+	position:relative;
+}
+.weizhi span{
+	position:absolute;
+	right:10px;
+	top:3px;
+}
+
+
+.searchtxt{
+	border:1px solid #8FA6BC;
+	height:16px;
+	line-height:16px;
+}
+
+
+
+/*------文章方框盒子总定义-----*/
+
+#news{/*黄色*/border-left:1px solid #FCD372;border-right:1px solid #FCD372;zoom:1;padding-bottom:1px;background:#FDE7A2;
+
+padding:0px 3px 0px 3px;margin:0 0px 0;}
+
+
+/* 链接颜色定义移动后的改变
+==========================================================*/
+a:link{
+	color:black;
+	text-decoration:none;
+}
+
+
+a.v_red:link{
+	color:#BF001F;
+	text-decoration:none;
+}
+a.v_red:visited{
+	color:#BF001F;
+	text-decoration:none;
+}
+a.v_red:hover{
+	color:#BF001F;
+	text-decoration:underline;
+}
+
+
+
+
+
+/*------文章内容定义-----*/
+h1{
+	color:#c30;
+	text-align:center;background:white;
+	font-size:22px;
+	margin:0px;
+	padding:14px 0pt;
+	font-weight:bold;
+}
+.content{padding:0 4px 0 4px;background:white;
+	font-size:14px;
+	color:black;
+	line-height:25px;
+	margin:0px 0px 0px 0px;/*修改*/
+}
+.content p{
+	text-indent:0em;/*文章段首缩进0汉字*/
+	margin:10px 10pt;/*文章段落上下距10寸，左右边距10寸*/
+}
+.content img{
+	border:1px solid #666666;
+	max-width:510px;
+}
+.content .logo{
+	border:0;
+}
+.content tbody td{
+	padding:8px;
+}
+.content a{color:#000000;}
+
+/*------文章来源时间-----*/
+.times{
+	text-align:center;background:white;
+	color:black;
+	padding:2px 0px;/*修改*/
+	/*修改*/}
+
+.times small{margin-left:8px;margin-right:3px;font-size:12px;}
+.times b{margin-left:8px;margin-right:3px;font-size:12px;font-weight:normal;}
+
+.times span{/*修改*/}
+.times a{color:blue;padding-left:5px;}
+
+.times img{height:20px;margin-bottom:-4px;}
+
+
+.times .boxoff{border-top: 1px solid #E1E4E6;margin-bottom:10px;margin-left:8px;margin-right:8px;/*增加边界线定义*/}
+
+
+/*------本文作者个人空间-----*/
+
+.infos_userinfo{text-indent:2em;
+	line-height:24px;background:white;font-size:14px;	
+	padding:0px 15px 5px 15px;/*修改*/;	
+	height: 20px;/*修改*/}
+
+.infos_userinfo a{color:blue;}
+
+
+/*------上下篇文章-----*/
+.xg{
+	line-height:24px;background:white;
+	
+	padding:0px 15px 5px 15px;/*修改*/;
+	
+	
+	height: 20px;/*修改*/}
+
+.xg li{/*溢出出现省略号*//*火狐浏览器下无省略号*/white-space:nowrap;text-overflow:ellipsis;overflow: hidden;
+	width:50%;
+	float:left;}
+
+/*------新增加-----*/
+
+.mt1{padding:5px 5px 5px 8px;background:white;}
+
+
+/*大修改*//*大修改*//*大修改*//*大修改*//*大修改*/
+
+/*------内容页右侧方框盒子-----*/
+
+.right_bot{margin-bottom:10px;}
+
+
+
+.right_box1{/*修改*/width:99%;overflow:hidden;border: 1px solid #abb8bf;}
+
+.right_title1{/*蓝色星座爱情网*/border-bottom:1px solid #abb8bf;height:25px;overflow:hidden;clear:both;
+	background: #dfe8ed url(bg1.png) repeat-x 0 -70px;}
+
+.right_title1 strong{/*字体颜色定义*/padding-left:22px;height:28px;line-height:28px;font-size:14px;font-weight:bold;color:green;display:block;background:url(../images2009/fbico2.gif) 5px 5px no-repeat;letter-spacing:1px;}
+
+
+.right_box2{/*修改*/width:99%;overflow:hidden;border: 1px solid #41545b;}
+
+.right_title2{/*黄色星座爱情网*/border-bottom:1px solid #41545b;height:25px;overflow:hidden;clear:both;
+	background: #dfe8ed url(bg1.png) repeat-x 0 -500px;}
+
+.right_title2 strong{/*字体颜色定义*/padding-left:22px;height:28px;line-height:28px;font-size:14px;font-weight:bold;color:white;display:block;background:url(../images2009/fbico2.gif) 5px 5px no-repeat;letter-spacing:1px;}
+
+.d2{/* 后置时间日期的小列表 */padding:7px 4px 4px;}
+.d2 li{height:27px;line-height:27px;overflow:hidden;}
+.d2 li a{overflow:hidden;color:blue;}
+.d2 li a:hover{overflow:hidden;color:red;text-decoration: underline;}
+
+.c1{/* 纯文本链接列表 */padding:7px 4px 4px;}
+.c1 li{height:27px;line-height:27px;overflow:hidden;}
+.c1 a{color:blue;font-size:12px;}
+.c1 a:hover{overflow:hidden;color:red;text-decoration: underline;}
+
+
+.ico2 li{/* 绿色模板增加定义 */
+	padding-left:17px;
+	background:url(../images/ico-2.gif) 0px 7px no-repeat;}
+
+
+
+
+/*---------- 栏目页定义开始 ---------*/
+.bc0{background:white;padding:0px 18px 20px 18px;/*上右下左可以变动 距下必须是25px实际是分页列表高度*/}
+.news_list{margin-top:-10px;/*新加*/}
+
+.news_list ul{border-top:1px solid #ccc;padding-top:15px;margin-top:10px/*变动top*/;}
+.news_list ul .list_title{color:blue;font-weight:bold;background:url(list_title.gif) no-repeat 7px 7px;padding-left:23px;
+font-size:14px;}
+.news_list ul .list_title span{font-size:12px;float:right;color:green;font-weight:normal;}
+.news_list ul .ot span{margin-right:50px;}
+.news_list ul .text{line-height:23px;text-indent:24px;padding:13px 0px;color:black;}
+
+.news_list ul .text span{margin-right:15px;}
+.news_list ul .text span a.preview{/*新加缩略图定义*/width:84px;height:84px;
+	float:left;margin-right:7px;margin-bottom:3px;margin-left:10px;display:inline;}
+.news_list ul .text span a.preview img{width:80px;/*height:60px;*/
+	display:block;padding:1px;border:1px solid #EEE;}
+.news_list ul .text span a.preview:hover img{border:1px solid #AAA;}
+
+.news_list a:link{color:blue;text-decoration:none;}
+.news_list a:hover{color:#0D6601;text-decoration:underline;}
+
+
+.dede_pages8{height:18px;font-family:Arial, Helvetica, sans-serif; line-height: normal; font-size: 14px;}
+.dede_pages8 ul{}
+
+.dede_pages8 ul li{float:left;margin-right:4px;margin-top:1px;
+padding:3px 5px; border:1px solid #ccc; background:#f0f0f0; text-decoration:none;}
+
+.dede_pages8 ul li a{float:left;color:blue;}
+.dede_pages8 ul li.thisclass{color:red;border:1px solid red;}
+.dede_pages8 ul li span{float:left;color:green;}
+
+#gad6{width:580px;height:20px;margin-left:0px;padding-top:7px;display:table;}
+#gad7{width:585px;height:10px;margin-left:0px;border-bottom:1px solid #ccc;padding-bottom:3px;margin-bottom:15px;
+margin-top:5px/*变动*/;display:table;}
+
+/*---------- 栏目页定义结束 ---------*/
+
+
+
+
+
+/* Nav
+==========================================================*/
+
+/*相关图文*//* 站长专访 *//*.shoucang{*//*首页book频道 2008-10-20 22:48 add by 水色皇朝 */
+
+
+/*----------查看评论的眉头---------*/
+
+.cmt007{border-top: 1px solid #E1E4E6;margin-bottom:10px;/*增加边界线定义*/}
+/*------新增加定义大家谈-----*/
+.cmttit{width:610px;height:35px;margin:0 auto;background:#f2f2f2;line-height:35px;clear:both;/*-大字-*/ font-size:14px;}
+.cmttit dl{width:586px;height:35px;margin:0 auto;clear:both;}
+.cmttit dt{width:94px;height:35px;float:left;}
+.cmttit1{background:url(../images2009/pl2.gif) no-repeat;}
+.cmttit2{background:url(../images2009/pl1.gif) no-repeat;}
+.cmttit dd{width:492px;height:35px;line-height:35px;text-align:right;float:right;}
+.cmttit dd a{color:blue;/*-进入评论页字体-*/}
+.cmttit dd b{color:blue;/*-评论数颜色-*/}
+
+.tbox{/* 自适应宽度的块(通用块) */width:100%;overflow:hidden;margin-top:10px;/*-修改-*/}
+.tbox dt{height:25px;overflow:hidden;clear:both;background:url(../images/mbox-tbg.png) right top repeat-x;}
+
+.tbox dt strong{height:25px;line-height:25px;padding-left:10px;padding-right:4px;display:block;float:left;color:blue;letter-spacing:1px;}
+.tbox dt strong a{color:blue;}
+.tbox dt strong a:hover{color:#444;text-decoration:none;}
+.tbox dt span.more{float:right;position:relative;line-height:25px;padding-right:8px;color:blue;}
+
+.tbox dt span.more a{color:blue;text-decoration:none;}
+.tbox dt span.more a:hover{color:#333;}
+.tbox dt span.more b{color:red;text-decoration:none;}
+
+
+
+/*----------发表评论---------*/
+.nocomment{padding:10px;color:#777;}
+
+.dede_comment_post{padding:0px;/*-修改-*/}
+.dcmp-post{float:left;padding-bottom:10px;width:600px;}
+.dcmp-post .dcmp-userinfo{float:left;margin-right:5px;margin-top:12px;}
+.dcmp-post .dcmp-submit{}
+
+
+.dcmp-post .dcmp-submit button{color:#fff;background:url(../images2009/btn_bg2.gif) no-repeat;width:80px;height:29px;font-weight:bold;line-height:29px;cursor:pointer;float:right;border:none;/*-去掉按钮边框-*/margin-right:192px;margin-top:8px;
+}
+
+.dcmp-post .dcmp-userinfo input{vertical-align:middle/*-火狐浏览器兼容-*/;
+	height:15px;padding-right:10px;}
+
+
+.dcmp-mood{height:25px;width:80%;overflow:hidden;clear:both;padding-top:12px;}
+.dcmp-mood strong{float:left;color:#444;font-weight:normal;line-height:25px;}
+.dcmp-mood ul{float:left;}
+.dcmp-mood ul li{float:left;margin-right:8px;}
+.dcmp-mood ul li input,.dcmp-mood ul li img{vertical-align:middle;margin-right:4px;*margin-right:0px;}
+
+
+.dcmp-title{line-height:23px;}
+
+.dcmp-content{padding-bottom:0px;/*-修改-*/}
+.dcmp-content textarea{width:96%;height:60px;}
+
+/*----------单独评论页内容列表---------*/
+#dede_comment{padding-bottom:6px;}
+#dede_comment .decmt-box{margin-top:11px;width:98%;padding:6px 5px 8px;border-bottom:1px dashed green;overflow:hidden;clear:both;}
+#dede_comment .decmt-box .decmt-title{line-height:19px;color:blue;font-family:Tahoma;}
+#dede_comment .decmt-box .decmt-title span{margin-right:2px;vertical-align:middle;}
+#dede_comment .decmt-box .decmt-title .moodico{height:19px;width:19px;display:inline-block;}
+#dede_comment .decmt-box .decmt-title .username{color:blue;margin-left:5px;}
+#dede_comment .decmt-box .decmt-title .username a{color:blue;}
+#dede_comment .decmt-box .decmt-title .username a:hover{text-decoration:none;color:red;}
+
+#dede_comment .decmt-box .decmt-title .date{color:green;margin-left:14px;font-size:11px;margin-top:-23px;}
+#dede_comment .decmt-box .decmt-title .ip{color:black;margin-left:18px;font-size:11px;}
+#dede_comment .decmt-box .decmt-title .top{color:green;margin-left:18px;font-size:11px;}
+
+#dede_comment .decmt-box .decmt-act{float:right;margin-right:50px;margin-top:-28px;padding-right:10px;position:relative;clear:both;color:black;}
+#dede_comment .decmt-box .decmt-act span{margin-right:7px;}
+#dede_comment .decmt-box .decmt-act span a{color:blue;}
+#dede_comment .decmt-box .decmt-content{color:black;line-height:21px;clear:both;width:99%;margin-left:5px;/*	background:url(../images/ico-comment-quote.gif) 0px 4px no-repeat;text-indent:18px;*/}
+
+/*---------- 标记评论页分页代码 ---------*/
+.pagelistbox{margin-top:18px;margin-bottom:18px;text-align:center;}
+
+.dede_comment .decmt-box .decmt-content img{vertical-align:middle;}
+.dede_comment .decmt-box .decmt-box{background:#FFE;border:1px solid #CCC;margin:6px auto;}
+.dede_comment .decmt-box .decmt-box .decmt-title{text-indent:4px;}
+.dede_comment .decmt-box .decmt-box .decmt-content{color:#666;}
+
+/*---------- dede5.5新增加定义内容页评论列表分页---------*/
+#commetpages {text-align:center;line-height:28px;}
+
+#commetpages a {border:1px solid #64B1DF;padding:0 3px 0 3px;}
+
+/*---------- 内容页评论风格定义 ---------*/
+.dede_comment{padding-bottom:6px;}
+.dede_comment .decmt-box{margin-top:11px;width:98%;padding:6px 5px 8px;border-bottom:1px dashed green;overflow:hidden;clear:both;}
+.dede_comment .decmt-box .decmt-title{line-height:19px;color:blue;font-family:Tahoma;}
+.dede_comment .decmt-box .decmt-title span{margin-right:2px;vertical-align:middle;}
+.dede_comment .decmt-box .decmt-title .moodico{height:19px;width:19px;display:inline-block;}
+.dede_comment .decmt-box .decmt-title .username{color:blue;margin-left:5px;}
+.dede_comment .decmt-box .decmt-title .username a{color:blue;}
+.dede_comment .decmt-box .decmt-title .username a:hover{text-decoration:none;color:red;}
+
+.dede_comment .decmt-box .decmt-title .date{color:green;margin-left:14px;font-size:11px;margin-top:-23px;}
+.dede_comment .decmt-box .decmt-title .ip{color:black;margin-left:18px;font-size:11px;}
+.dede_comment .decmt-box .decmt-title .top{color:green;margin-left:18px;font-size:11px;}
+
+.dede_comment .decmt-box .decmt-act{float:right;margin-right:50px;margin-top:-28px;padding-right:10px;position:relative;clear:both;color:black;}
+.dede_comment .decmt-box .decmt-act span{margin-right:7px;}
+.dede_comment .decmt-box .decmt-act span a{color:blue;}
+.dede_comment .decmt-box .decmt-content{color:black;line-height:21px;clear:both;width:99%;margin-left:5px;/*	background:url(../images/ico-comment-quote.gif) 0px 4px no-repeat;text-indent:18px;*/}
+
+
+/*---------- 内容页分页 ---------*/
+.pagebreak .licenter{/*-注销掉--*/}
+
+.dede_pages{padding-top:10px;/*-火狐浏览器兼容-*/;}
+.dede_pages{line-height:22px/*增加*/;width:622px;/*修改*/float:none;overflow:hidden;text-align:center;background:white;}
+.dede_pages ul{padding:5px 0px 1px 0px;/*--上边 右边  ，下边 左边--*/
+	margin:0px auto;float:none;clear:both;overflow:hidden;text-align:center;white-space:nowrap;}
+.dede_pages ul li{float:none;padding:9px 5px 2px;/*--上 ，左－右 ，下 --*/display:inline;}
+
+.dede_pages ul li a{padding:2px 5px 2px;border:1px solid #FF3E96;float:none;}
+.dede_pages ul li.thisclass a{color:green;border:2px solid green;font-weight:bold;}
+
+
+
+/*---------- 网站底部增加定义 ---------*/
+.foot{padding-top:10px;border-bottom:1px solid #ccc;margin-left:10px;margin-right:10px;}
+
+/*---------- 网站底部版权 ---------*/
+
+#footer{ padding-top:1em; text-align:center; line-height:22px; clear:both; width:930px;margin:0 auto;
+background:white/* 白色背景增加定义 */;}
+#footer a{color:#039;}
+#footer a:hover{color:#f60;}
+#footer span{font-family:tahoma; font-size:11px;}
+
+.front{/*你的排行榜列表*/
+FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: url(../images/top.gif) no-repeat; FLOAT: left; MARGIN: 8px 4px 4px 0px; WIDTH: 12px; COLOR: #fff; LINE-HEIGHT: 11px; font-family:Verdana, Geneva, sans-serif; HEIGHT: 11px; TEXT-ALIGN: center}
+.front1{
+FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: url(../images/top1.gif) no-repeat; FLOAT: left; MARGIN: 7px 4px 4px 0px; WIDTH: 12px; COLOR: #fff; LINE-HEIGHT: 11px; font-family:Verdana, Geneva, sans-serif; HEIGHT: 11px; TEXT-ALIGN: center}

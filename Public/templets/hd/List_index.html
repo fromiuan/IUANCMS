@@ -1,0 +1,30 @@
+<include file='Common:header' />
+	<link rel="stylesheet" href="__TMPL__/Css/list.css" />
+<include file='Common:menu' />
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<iuan:field name="content" />
+			<iuan:arclist paging='1' pagesize='5' mod="5" getall='1' field="description,click,typename">
+				<dl>
+					<dt><field name='title' function="cn_substr(@me,0,38,false)"/>
+					</dt>
+					<dd class='channel'>[<a href="<field name='typeurl'/>"><field name='name'/></a>]</dd>
+					<dd class='info'>
+						<span class='time'>发布于：<field name='createtime'/></span>
+						<span class='click'>点击：<field name='click'/></span>
+					</dd>
+					<dd class='content'><field name='description'/></dd>
+					<dd class='read'>
+						<a href="<field name='arcurl'/>" target="_blank">阅读全文>></a>
+					</dd>
+				</dl>
+			</iuan:arclist><br><br>
+
+			<p><iuan:page linkpage='5' option="indexpage,prepage,linkpage,nextpage,endpage,select,pageinfo"/></p>
+		</div>
+	<!--主体右侧-->
+		<include file='Common:right' />
+	</div>
+<!--底部-->
+<include file='Common:footer' />

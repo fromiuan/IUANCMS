@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css">
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th align="center">ID</th>
+			<th>用户名称</th>
+			<th>上一次登录时间</th>
+			<th>上一次登录IP</th>
+			<th>锁定状态</th>
+			<th>用户所属别组</th>
+			<th>操作</th>
+		</tr>
+		<foreach name='user' item='v'>
+			<tr>
+				<td align="center">{$v.id}</td>
+				<td align="center">{$v.username}</td>
+				<td>{$v.logintime|date='y-m-d H:i',###}</td>
+				<td>{$v.loginip}</td>
+				<td align="center">
+					<if condition='$v[lock] eq 0'>没锁定<else/>锁定</if>
+				</td>
+				<td>
+					<if condition='$v["username"] eq C("RBAC_SUPERADMIN")'>超级管理员</if>
+					<ul>
+						<foreach name='v.role' item='value'>
+							<li>{$value.name}({$value.remark})</li>
+						</foreach> 
+					</ul>
+				</td>
+				<td>
+					<a href="{:U(GROUP_NAME .'/Rbac/setLock',array('lock' => $v['lock'],'rid' => $v['id']))}">	<if condition='$v[lock] eq 1'>解锁<else/>锁定</if>
+					</a>
+					<a href="{:U(GROUP_NAME .'/Rbac/delUser',array('userid' => $v['id']))}">
+						删除用户
+					</a>
+				</td>
+			</tr>
+		</foreach>
+	</table>
+</body>
+</html>

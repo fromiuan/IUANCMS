@@ -1,0 +1,34 @@
+<include file='Common:header' />
+	<link rel="stylesheet" href="__TMPL__/Css/show.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Data/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+	<script type="text/javascript" src="__ROOT__/Data/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+<include file='Common:menu' />
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<div class='location'>
+				<a href="index.php">首页</a>>
+				<php> $last = count($parent) -1;</php>
+				<foreach name='parent' item='v'>
+					<a href="{:U('/c_'.$v['id'])}">{$v.name}</a><if condition='$key neq $last'>></if>
+				<foreach>
+			</div>
+			<div class="title">
+				<p><iuan:field name="title"/></p>
+				<div>
+					<span class='fl'>发布于：<iuan:field name="createtime"/></span>
+					<span class='fr'>已被阅读<iuan:field name="click"/>次</span>
+				</div>
+			</div>
+			<div class='content' style="word-break:break-all">
+				<iuan:field name="content"/>
+			</div>
+		</div>
+	<!--主体右侧-->
+	<include file='Common:right' />
+	</div>
+<!--底部-->
+<include file='Common:footer' />

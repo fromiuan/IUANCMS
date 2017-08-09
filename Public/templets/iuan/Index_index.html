@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <meta name="google-site-verification" content="fftfcpeWGDX5vsbqUHXae_x4y07IuxDPBJE3EGHRwWg" />
+
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="__PUBLIC__/Css/style888.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="__PUBLIC__/Js/dedeajax2.js" language="javascript" type="text/javascript" ></script>
+<script src="__PUBLIC__/Js/j.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("dl.tbox dt span.label a[_for]").mouseover(function(){
+			$(this).parents("span.label").children("a[_for]").removeClass("thisclass").parents("dl.tbox").children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+
+</head>
+<body class="index" >
+<div class="container">
+<div class="clearfix header">
+  
+      <div class="brand">
+        
+        <a class="site-logo" href="{dede:global.cfg_basehost/}" title="{dede:global.cfg_webname/}" rel="home"><img src=" {dede:global.cfg_templeturl/}/images2009/logo.gif" width="165" height="60" /></a>
+      </div>  
+      <div class="ad-banner">
+ 
+
+      </div>
+      <div class="ad-text">
+	 
+      </div>
+      
+  </div>
+
+<div class="nav">
+<div class="navinner">
+<ul class="navlist">
+		<li class="home"><a href='{dede:global.cfg_cmsurl/}/'>首页</a></li>
+		<iuan:arctype type="top">
+	        <li><a href='<field name="typeurl" />'><field name="name" /></a></li>
+	    </iuan:arctype>
+</ul>
+</div>  
+</div>
+<!-- /header -->
+
+<!-- /search -->
+<!--主体开始--><!--主体开始-->
+
+
+<div class="w960 center clear mt1">
+  <div class="pleftt">
+    <div class="bignews">
+    <!--头条-->
+      <div class="onenews">      
+      	{dede:arclist flag='h' limit='0,1'}
+        <h2><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h2>
+        <p>[field:description function='cn_substr(@me,51)'/]...<a href="[field:arcurl/]" target="_blank">[查看全文]</a></p>
+
+        {/dede:arclist}
+      </div>
+      <!-- /onenews -->
+
+      <ul class="d1 ico2">{dede:arclist row=4 orderby=pubdate}            
+            <li><span class="date">[field:pubdate function="MyDate('y-m-d',@me)"/]</span>  <a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>{/dede:arclist}
+
+      	
+      </ul>
+    <!--/头条-->
+     
+    </div>
+
+    <!-- /bignews -->
+    <div class="flashnews">
+      <!-- size: 280px * 192px -->
+<script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=280;
+var swf_height=192;
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist flag='f' row='5'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+  if(files=="") files = picarr[i];
+  else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+  if(links=="") links = linkarr[i];
+  else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+  if(texts=="") texts = textarr[i];
+  else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{dede:global.cfg_templeturl/}/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
+document.write('<embed src="{dede:global.cfg_templeturl/}/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+</script>
+       </div>
+    <!-- /flashnews -->
+    
+
+
+
+
+    <div class="picnews">
+      <dl class="tbox">
+        <dt><strong>图文欣赏</strong></dt>
+
+        <dd>
+          <ul class="e1">{dede:arclist row=5 orderby=pubdate type='image.' imgwidth='114' imgheight='94'}
+          	<li><a href="[field:arcurl/]" target="_blank">[field:image/]<span class="title">[field:title/]</span></a></li>{/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /picnews -->
+  <div class="listbox">
+
+	{dede:channelartlist}
+    <dl class="tbox888"><div class="cp_1"></div><div class="cp_2"></div><div class="cp_3"></div>
+   <div class="cp">
+        <dt><strong><a href="{dede:field name='typeurl'/}" target="_blank">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}" target="_blank">更多...</a></span></dt>
+        <dd>
+          <ul class="d1 ico3">
+          {dede:arclist titlelen='60' row='5'}
+            <li><span class="date">[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]" target="_blank">[field:title /]</a></li>
+
+          {/dede:arclist}
+          </ul>
+        </dd>
+</div>
+
+<div class="cp_4"></div><div class="cp_5"></div><div class="cp_1"></div>
+
+</dl>
+      
+	{/dede:channelartlist}
+    </div>
+    <!-- /listbox -->
+
+  </div>
+
+  <!-- /pleft -->
+
+
+
+
+  <div class="prightt">
+    
+
+    <!-- /usercenter -->
+    <div class="hot mt1">
+      <dl class="tbox1">
+        <dt><strong>热门文章</strong></dt>
+        <dd>
+          <ul class="c1">{dede:arclist titlelen=42 row=19 orderby=click}
+          	<li>[field:global name=autoindex runphp='yes'] 
+$c="<span class=front>".@me."</span>"; 
+if(@me > 3) @me="<span class=front1>".@me."</span>"; 
+else @me =$c; 
+[/field:global]<a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>{/dede:arclist}
+          </ul>
+
+        </dd>
+      </dl>
+    </div>
+
+
+
+    <div class="commend mt1">
+      <dl class="tbox">
+        <dt><strong>最新文章</strong></dt>
+        <dd>
+
+          <ul class="d4">
+           {dede:arclist titlelen=42 row=12}
+          	<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+            	
+            </li>{/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /commend -->
+
+   
+
+
+
+  </div>
+  <!-- /pleft -->
+</div>
+<div class="flink w960 center mt1 clear">
+	<dl class="tbox">
+		<dt>
+
+			<strong>友情链接</strong>
+			<span class="more">
+				
+			</span>
+		</dt>
+		<dd>
+		  <ul class="f5">
+ {dede:flink row='24'/}
+		  </ul>
+		</dd>
+	</dl>
+</div><!-- /flink -->
+
+
+
+<!--主体结束--><!--主体结束-->
+
+<!--底部:开始-->
+<div class="foot"></div>
+
+<!-- /footer -->
+
+</div><!-- /container -->
+
+
+<div id="footer">
+{dede:global.cfg_powerby/}
+</div>
+</body>
+</html>

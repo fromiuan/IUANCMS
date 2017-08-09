@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><iuan:field name='title'/>-<iuan:global name="cfg_webname"/></title>
+<meta name="Keywords" content="<iuan:field name='keywords'/>" />
+<meta name="Description" content="<iuan:field name='description'/>" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="shortcut icon" href="__TMPL__/images/favicon.ico" type="image/x-icon" />
+<link href="__TMPL__/Css/default.css" rel="stylesheet" type="text/css"/>
+<script src="__TMPL__/js/common.js" type="text/javascript"></script>
+<script src="__TMPL__/js/marquee.js" type="text/javascript"></script>
+<script src="/iuancms2/Public/Admin/js/Jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<include file="Common:head"/>
+<div id="wrapper">
+
+	<div id="side">
+	     <div class="RightRecommend">
+		      <div class="RRTitle">推荐文章</div>
+		     <div class="RRList">
+			 <ul> 
+			 <iuan:arclist flag='c' row='10' modelid='1'>
+			 <li><a href="<field name='arcurl'/>"><field name="title"/></a></li>
+			 </iuan:arclist>
+			 </ul>
+			 </div>
+			 </div>
+	
+		
+
+	     <div class="RightHotc">
+		      <div class="RHTitle">热门文章</div>
+		      <div class="RHList">
+			  <ul>
+			   <iuan:arclist row='10' modelid='1' orderby='click desc'>
+			 <li><a href="<field name='arcurl'/>"><field name="title"/></a></li>
+			 </iuan:arclist>
+			  </ul>
+			  </div>
+         </div>
+	</div>
+
+	<div id="content">
+         <div id="contextbg">
+              <h1><iuan:field name="title"/></h1>
+              <div id="newsinfo">作者:<span class="blue"><iuan:field name="write" function="empty(@me) ? '无':@me"/></span> 时间:<span class="blue"><iuan:field name="createtime" /></span>  浏览:<span class="blue"><iuan:field name="click"/></span>
+			    来源:<span class="blue"><iuan:field name="source" function="empty(@me)? '无':@me"/></span>
+			  </div>
+              <div id="adcontext1"></div>
+			  <div class="zhaiyao"><b>  核心提示:  </b><iuan:field name="description"/></div>
+              <div id="context"><iuan:field name="content"/></div>
+			  <div id="clear"></div>
+			  <div class="scott">
+				<iuan:field name="paging"/>
+			  </div>
+              <div class="Toolsbg"><a href="javascript:history.back(-1)">返回</a><a href="#top">跳至顶部</a></div>
+		 </div>
+         <div id="next">上一篇: <iuan:field name="prearticle" function="empty(@me) ? '无' :@me"/>  下一篇: <iuan:field name="nextarticle" function="empty(@me) ? '无' :@me"/></div>
+		<div style="padding:5px;"></div>
+		 </div>
+
+<include file="Common:footer"/>
+</body>
+</html>

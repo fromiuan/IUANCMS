@@ -1,0 +1,1070 @@
+@charset "utf-8";
+* {
+	padding:0px;
+	margin:0px;
+}
+body {
+	background:#f1ffd4;
+	font-family:"微软雅黑", "黑体", "宋体";
+	font-size:12px;
+}
+
+div.examples_body {
+	width: 750px;
+	margin: 50px auto 0 auto;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+}
+h2.title_name {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0;
+	padding: 50px 0 20px 0;
+	text-align: center;
+	color: #555;
+}
+h2.title_name span {
+	font-family: 'Times New Roman', Times, serif;
+	color: #f9f66d;
+	font-size: 0.9em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+h2.title_name small {
+	color: #505e70;
+	display: block;
+	font-family: normal Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.19em;
+	letter-spacing: 1.0em;
+	font-weight: bold;
+	line-height: normal;
+	text-transform: uppercase;
+	padding: 3px 0 0 0;
+}
+div.examples_body h3 {
+	color: #f9f66d;
+	font-size: 130%;
+	padding-bottom: 15px;
+	background: url("http://sunflowamedia.com/images/solid-line-news.gif") repeat-x bottom;
+}
+.copyright {
+	width: 100%;
+	color: #555;
+	text-align: center;
+	font-size: 100%;
+	letter-spacing: 3px;
+	margin-top: 100px;
+}
+.copyright a {
+	color: #AAA;
+	text-decoration: none;
+}
+
+
+.examples_bg {
+	width:980px;
+	height:305px;
+	background-color: #F0F0F0;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+}
+.examples_image {
+	width:680px;
+	height: 300px;
+	float: left;
+	background: #333;
+	position: relative;
+	overflow: hidden; 
+	color: #fff;
+}
+.examples_image img {
+	width:680px;
+	height:300px;
+}
+.small_pic {
+	width:50px;
+	height:38px;
+}
+.examples_image h4 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+}
+.examples_image h4.title02 {
+	color: #feb403;
+}
+.examples_image h4.title03 {
+	color: #f23962;
+}
+.examples_image h4.title04 {
+	color: #43b6ff;
+}
+.examples_image p {
+	line-height: 1.5em;
+	padding: 10px 10px 0 10px;
+	margin: 0;
+	font-size: 0.9em;
+}
+.block small { 
+	font-size: 1em;
+	padding: 0 0 5px 20px;
+}
+.examples_image .block small {
+	margin-left: 10px;
+}
+.examples_image .desc {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0; 
+	display: none; 
+}
+.examples_image .block {
+	width: 100%;
+	background: #111;
+	border-top: 1px solid #000;
+}
+.examples_image a.collapse { 
+	width: 93px;
+	height: 27px;
+	background:url("http://www.hejianjiao.org/images/btn_display.gif") no-repeat left top;
+	text-indent: -99999px;
+	position: absolute;
+	top: -27px;
+	right: 20px;
+}
+.examples_image a.show {
+	background-position: left bottom;
+}
+
+
+.mune_thumb {
+	width: 299px;
+	float: left;
+	background: #f0f0f0;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #ccc;
+	overflow: hidden;
+}
+.mune_thumb img {
+	border: 1px solid #ccc;
+	padding: 5px;
+	background: #fff;
+	float: left;
+}
+.mune_thumb ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mune_thumb ul li {
+	width: 279px;
+	color: #333;
+	margin: 0;
+	padding: 12px 10px;
+	background-color: #EEE;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #ccc;
+}
+.mune_thumb ul li.hover { 
+	background: #CCC;
+	cursor: pointer;
+}
+.mune_thumb ul li.active { 
+	background: #fff;
+	cursor: default;
+}
+.mune_thumb ul li h4 {
+	font-size: 1.4em;
+	margin: 5px 0;
+	padding: 0;
+}
+.mune_thumb ul li .block {
+	float: left;
+	margin-left: 10px;
+	padding: 0;
+	width: 200px;
+}
+.mune_thumb ul li p {
+	display: none;
+} 
+
+#content, #flash {
+	width:1000px;
+	margin:0px auto;
+	padding:0px;
+}
+#header {
+	width:100%;
+	height:78px;
+	background:url("http://www.hejianjiao.org/images/globallink.gif") repeat-x;
+}
+
+#topmenu {
+	width:1000px;
+	margin:0 auto;
+	background:url("http://www.hejianjiao.org/images/globallink.gif") repeat-x;
+}
+#top_link {
+	text-align:right;
+	padding-right:20px;
+	height:35px;
+	line-height:35px;
+}
+#navMenu {
+	width:752px;
+	height:78px;
+	display:block;
+	overflow:hidden;
+	padding-left:248px;
+	background:url("http://www.hejianjiao.org/images/logo.gif") no-repeat;
+}
+#navMenu ul {
+	width:752px;
+	height:43px;
+	display:block;
+}
+#navMenu ul li {
+	display: block;
+	margin-right:20px;
+	text-align:center;
+	float:left;
+	font-size:16px;
+	width:102px;
+	height:43px;
+	line-height:43px;
+	position:relative;
+}
+#navMenu ul li a {
+	display:block;
+	width:102px;
+	height:43px;
+	color:#fff;
+	text-decoration:none;
+}
+#specil, #navMenu ul li a:hover, #navMenu ul li.hover a {
+	display:block;
+	border:none;
+	text-decoration:none;
+	color:#73b444;
+	list-style:none;
+	background:url("http://www.hejianjiao.org/images/hover-bg.gif") no-repeat;
+}
+#top_link a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#top_link a:hover {
+	color:#73b444;
+	font-size:13px;
+}
+
+.dropMenu {
+	position:absolute;
+	display:block;
+	z-index:100;
+	background:#fafafa;
+	border-bottom:3px solid #000000;
+	border-left:3px solid #000000;
+	border-right:3px solid #000000;
+	padding:10px 15px;
+	visibility: hidden;
+	list-style:none;
+	width:155px;
+}
+.dropMenu li {
+	display:block;
+	width:60px;
+	padding-left:15px;
+	height:25px;
+	line-height:25px;
+	background:url("http://www.hejianjiao.org/images/gou.gif") 0px 10px no-repeat;
+	list-style:none;
+	float:left;
+}
+.dropMenu li a:link {
+	color:#000000;
+	text-decoration:none;
+}
+.dropMenu li a:hover {
+	color:#73b444;
+}
+.dropMenu li a:visited {
+	color:#333333;
+	text-decoration:none;
+}
+
+#bg_flash {
+	width:100%;
+	background:url("http://www.hejianjiao.org/images/bg_flash.jpg") repeat-x;
+}
+#flash {
+	background:url("http://www.hejianjiao.org/images/flash.jpg") no-repeat;
+	height:330px;
+}
+
+#content {
+	margin-top:10px;
+	height:auto
+}
+#content img {
+	width:130px;
+	float:left;
+}
+#top_content {
+	height:260px;
+	width:1000px;
+	background:url("http://www.hejianjiao.org/images/bg_2.gif") repeat-x;
+	color:#000000;
+}
+#enter {
+	float:left;
+	height:75px;
+	line-height:75px;
+	font-size:24px;
+	padding-left:20px;
+}
+#news {
+	width:765px;
+	height:170px;
+	margin-top:15px;
+	float:left;
+	padding-left:35px;
+}
+#news img {
+	clear:both;
+	width:40px;
+	height:40px;
+	float:left;
+}
+.context {
+	width:220px;
+	float:left;
+	margin-right:30px;
+	display:inline;
+}
+.context p {
+	line-height:25px;
+	height:35px;
+	font-size:16px;
+	font-weight:bold;
+}
+.context_text {
+	clear:both;
+}
+#page1 {
+	float:right;
+	width:170px;
+	height:165px;
+	z-index:30;
+	display:inline;
+	position:relative;
+	margin-right:20px;
+	margin-top:5px;
+	background:#F1FFD4;
+}
+#page_con {
+	position:absolute;
+	top:-6px;
+	left:-5px;
+	width:185px;
+	height:165px;
+	background:url("http://www.hejianjiao.org/images/hjj_17.gif") no-repeat;
+	z-index:40;
+}
+#page_bg {
+	position:absolute;
+	top:60px;
+	left:-8px;
+	width:185px;
+	height:120px;
+	background:url("http://www.hejianjiao.org/images/hjj_32.gif") bottom right no-repeat;
+	z-index:43;
+}
+#search {
+	display:block;
+	background:url("http://www.hejianjiao.org/images/search.gif") 22px 0px no-repeat;
+	width:170px;
+	height:33px;
+	margin-top:30px;
+}
+.search_frame {
+	text-align:center;
+	width:95px;
+	height:20px;
+	line-height:18px;
+	margin:3px 0 0 30px;
+	border:none;
+	background:transparent;
+}
+#say {
+	display:block;
+	background:url("http://www.hejianjiao.org/images/say.gif") 20px 3px no-repeat;
+	width:140px;
+	height:30px;
+	cursor:pointer;
+}
+#say:hover {
+	background:url("http://www.hejianjiao.org/images/say2.gif") 20px 3px no-repeat
+}
+#zongjie {
+	display:block;
+	background:url("http://www.hejianjiao.org/images/zongjie_bg.gif") 20px 3px no-repeat;
+	width:140px;
+	height:30px;
+	cursor:pointer;
+}
+#zongjie:hover {
+	background:url("http://www.hejianjiao.org/images/zongjie_bg2.gif") 20px 3px no-repeat;
+}
+#blog {
+	display:block;
+	background:url("http://www.hejianjiao.org/images/bolog_bg.gif") 12px 3px no-repeat;
+	width:144px;
+	height:25px;
+	cursor:pointer;
+	margin-bottom:5px;
+	margin-left:5px;
+}
+#blog:hover {
+	background:url("http://www.hejianjiao.org/images/bolog_bg2.gif") 12px 3px no-repeat;
+}
+
+#bottom_content {
+	margin:10px auto 0 auto;
+	width:993px;
+	height:auto;
+	clear:both;
+	background:#f6f6f6;
+	border-top:1px solid #8ec818;
+	border-left:1px solid #8ec818;
+	border-right:1px solid #8ec818;
+}
+#show_title {
+	background:url("http://www.hejianjiao.org/images/show.gif") 25px 25px no-repeat;
+	width:100px;
+	height:50px;
+	padding-left:150px;
+	padding-top:20px;
+	font-size:24px;
+	color:#8ec818;
+	line-height:50px;
+}
+
+.blk_18 a {
+	color:#213f71;
+	font-size:9pt;
+	text-decoration:none;
+}
+.blk_18 {
+	overflow:hidden;
+	zoom:1;
+	clear:both;
+	font-size:9pt;
+	border:1px solid #e3e3e3;
+	width:990px;
+	margin-top:8px;
+}
+.blk_18 .pcont {
+	width:928px;
+	float:left;
+	overflow:hidden;
+	margin-left:35px;
+}
+.blk_18 .ScrCont {
+	width:32766px;
+	zoom:1;
+	margin-left:15px;
+}
+
+.blk_18 .pl img {
+	display:block;
+	cursor:pointer;
+	border:none;
+	width:204px;
+	height:137px;
+	border:1px solid #999999;
+}
+.blk_18 .pl {
+	width:206px;
+	margin:6px 13px 1px 13px;
+	display:block;
+	float:left;
+	border:1px solid #f3f3f3;
+	float:left;
+	text-align:center;
+	line-height:24px;
+}
+.blk_18 .pl:hover {
+	border:1px solid #006600;
+	color:#006600;
+	background:#fff;
+}
+
+#team {
+	clear:both;
+	margin-top:10px;
+	height:240px;
+	padding:0px 20px;
+	background:url("http://www.hejianjiao.org/images/hjj_51.gif") 268px bottom no-repeat;
+}
+.team_news {
+	display:block;
+	width:260px;
+	height:240px;
+	float:left;
+	padding-right:60px;
+}
+.about_us {
+	display:block;
+	width:378px;
+	height:240px;
+	padding-left:100px;
+	float:right;
+}
+#news_title {
+	background:url("http://www.hejianjiao.org/images/news.gif") 0px 20px no-repeat;
+	height:45px;
+	padding-left:100px;
+	padding-top:20px;
+	font-size:16px;
+	color:#8ec818;
+	line-height:50px;
+}
+#aboutus_title {
+	background:url("http://www.hejianjiao.org/images/about%20us.gif") 0px 20px no-repeat;
+	height:45px;
+	padding-left:160px;
+	padding-top:20px;
+	font-size:16px;
+	color:#8ec818;
+	line-height:50px;
+}
+.float_title {
+	display:block;
+	margin:0px;
+	padding:0px;
+}
+.left {
+	float:left;
+}
+.more {
+	width:60px;
+	float:right;
+	margin:38px 0px 0px 0px;
+	height:20px;
+	display:block;
+	color:#000000;
+	text-decoration:none;
+}
+.more2 {
+	width:60px;
+	float:right;
+	margin:5px 0px;
+	height:20px;
+	display:block;
+	color:#000000;
+	text-decoration:none;
+}
+.more2:hover, .more:hover {
+	color:#8ec818;
+	font-weight:bold;
+}
+.team_news li, .about_us li {
+	clear:both;
+	list-style:none;
+	padding:7px 0px 7px 22px;
+	margin-left:20px;
+	height:15px;
+	display:block;
+	background:url("http://www.hejianjiao.org/images/dd.gif") 0 5px no-repeat;
+}
+.about_us li {
+	margin-left:40px;
+}
+.team_news li a, .about_us li a {
+	color:#000000;
+	text-decoration:none;
+}
+.team_news li a:hover, .about_us li a:hover, more:hover {
+	font-size:13px;
+	color:#8ec818;
+}
+#footer {
+	background:url("http://www.hejianjiao.org/images/footer.gif") no-repeat;
+	margin:0px auto;
+	width:993px;
+	padding-top:48px;
+}
+#footer_h {
+	background:url("http://www.hejianjiao.org/images/footer.jpg") no-repeat;
+	margin:0px auto;
+	width:993px;
+	padding-top:48px;
+}
+#friend_link {
+	height:108px;
+	background:#2b2a2a;
+	color:#FFFFFF;
+}
+#left_table {
+	height:80px;
+	padding-left:150px;
+	padding-top:25px;
+	text-align:left;
+}
+#friend_link a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#friend_link a:hover {
+	text-decoration:underline;
+	color:#CCCC00;
+}
+
+#pic_page {
+	width:710px;
+	height:auto;
+	overflow:visible;
+	margin:20px 0px 0px 0px;
+	border:2px solid #003300;
+}
+#pic_page img {
+	border:none;
+}
+#pic_page ul {
+	list-style:none;
+	position:relative;
+}
+#pic_page {
+	list-style:none;
+	position:absolute;
+}
+#a1 {
+	width:170px;
+	height:294px;
+}
+#a1 img {
+	width:170px;
+	height:294px;
+}
+#a22, {
+ width:170px;
+ height:190px;
+}
+#a21, #a23, #a31, #a32, #a33, #a34, #a35 {
+	width:170px;
+	height:90px;
+}
+#a21 {
+	top:0px;
+	left:180px;
+	position:absolute;
+}
+#a23 {
+	top:102px;
+	left:180px;
+	position:absolute;
+}
+#a22 {
+	top:104px;
+	left:540px;
+	position:absolute;
+}
+#a31 {
+	top:204px;
+	left:180px;
+	position:absolute;
+}
+#a32 {
+	top:0px;
+	left:360px;
+	position:absolute;
+}
+#a33 {
+	top:102px;
+	left:360px;
+	position:absolute;
+}
+#a34 {
+	top:204px;
+	left:360px;
+	position:absolute;
+}
+#a35 {
+	top:0px;
+	left:540px;
+	position:absolute;
+}
+.caption {
+	width: 170px;
+	height: 194px;
+	float:left;
+	overflow: hidden;
+	position: relative;
+	color:#FFFFFF;
+}
+.captionfull {
+	width: 170px;
+	height: 190px;
+	float:left;
+	overflow: hidden;
+	position: relative;
+	color:#FFFFFF;
+}
+.captionfull img {
+	position: absolute;
+	width:170px;
+	height:190px;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.caption img {
+	position: absolute;
+	width:170px;
+	height:90px;
+	top: 0;
+	left: 0;
+	border: 0;
+}
+.boxcaption {
+	float: left;
+	text-align:center;
+	position: absolute;
+	background:#333333;
+	height: 40px;
+	width: 170px;
+	z-index:100;
+	opacity: .8;
+	
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.boxcaption a {
+	color:#FFFF00;
+	text-decoration:none;
+	text-align:center;
+}
+.boxcaption a:hover {
+	color:#FFFFFF;
+}
+.captionfull .boxcaption {
+	top:-40px;
+	left: 0;
+	overflow:hidden;
+}
+.caption .boxcaption {
+	top:-40px;
+	left: 0;
+	overflow:hidden;
+}
+
+
+.Team {
+	clear:both;
+	width:972px;
+	height:auto;
+	margin:10px 0px 30px 0px;
+}
+.TheOrder {
+	font-size:16px;
+	font-weight:bold;
+	padding:0px;
+}
+.TheOrderSelect {
+	display:block;
+	margin:10px 0px 10px 880px;
+}
+#select1, #select2 {
+	margin-rigth:30px;
+	width:100px;
+}
+#diagram {
+	width:972px;
+	height:auto;
+	margin:10px auto;
+}
+p.demo_btn {
+	width: 950px;
+	margin: 10px auto;
+	font-size: 0;
+	text-indent: -9999px;
+	clear: both;
+	overflow: hidden;
+}
+p.demo_btn a {
+	width: 160px;
+	height: 41px;
+	float: right;
+	background: url("http://www.hejianjiao.org/images/Download_Button.gif") no-repeat;
+}
+p.demo_btn a:hover {
+	background: url("http://www.hejianjiao.org/images/Download_Button_o.gif") no-repeat;
+}
+
+.easy-accordion {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.easy-accordion dt, .easy-accordion dd {
+	margin: 0;
+	padding: 0;
+}
+.easy-accordion dt, .easy-accordion dd {
+	position: absolute;
+}
+.easy-accordion dt {
+	margin-bottom: 0;
+	margin-left: 0;
+	z-index:5; 
+	-webkit-transform: rotate(-90deg); 
+	-moz-transform: rotate(-90deg);
+	-moz-transform-origin: 20px 0px;  
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	cursor:pointer;
+}
+.easy-accordion dd {
+	z-index:1;
+	opacity: 0;
+	overflow: hidden;
+}
+.easy-accordion dd.active {
+	opacity: 1;
+}
+.easy-accordion dd.no-more-active {
+	z-index: 2;
+	opacity: 1;
+}
+.easy-accordion dd.active {
+	z-index: 3;
+}
+.easy-accordion dd.plus {
+	z-index: 4;
+}
+.easy-accordion .slide-number {
+	position: absolute;
+	bottom:0;
+	left: 10px;
+	font-weight: normal;
+	font-size: 1.1em;
+	-webkit-transform: rotate(90deg); 
+	-moz-transform: rotate(90deg);  
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+
+dd p {
+	line-height: 120%
+}
+#accordion-1, #accordion-2 {
+	width: 950px;
+	height: 275px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #b5c9e8;
+	clear:both;
+}
+.self_left {
+	height:260px;
+	width:auto;
+	padding:10px 10px;
+}
+.self_right {
+	float:left;
+	width:120px;
+	height:240px;
+	padding:10px 10px;
+}
+#accordion-1 dl, #accordion-2 dl {
+	width: 950px;
+	height: 275px;
+}
+#accordion-1 dt, #accordion-2 dt {
+	height:46px;
+	clear:both;
+	line-height: 44px;
+	text-align: right;
+	padding:0 10px 0 0;
+	font-size:18px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	background: #fff url("http://www.hejianjiao.org/images/slide-title-inactive-1.jpg") no-repeat;
+	color:#26526c;
+}
+#accordion-1 dt.active, #accordion-2 dt.active {
+	cursor: pointer;
+	color:#fff;
+	background:#fff url("http://www.hejianjiao.org/images/slide-title-active-1.jpg") no-repeat;
+}
+#accordion-1 dt.hover, #accordion-2 dt.hover {
+	color: #68889b;
+}
+#accordion-1 dt.active.hover, #accordion-2 dt.active.hover {
+	color: #fff;
+}
+#accordion-1 dd, #accordion-2 dd {
+	padding: 10px;
+	display:block;
+	width:930px;
+	clear:both;
+	background: url("http://www.hejianjiao.org/images/slide.jpg") repeat-x;
+	border:1px solid #dbe9ea;
+	border-left:0;
+	margin-right: 3px;
+}
+#accordion-1 .slide-number, #accordion-2 .slide-number {
+	color:#68889b;
+	left:10px;
+	font-weight: bold;
+}
+#accordion-1 .active .slide-number, #accordion-2 .active .slide-number {
+	color: #FFF;
+}
+#accordion-1 a, #accordion-2 a {
+	color: #68889b;
+}
+#accordion-1 dd img, #accordion-2 dd img {
+	border:none;
+	width:107px;
+	height:107px;
+}
+#diagram h4 {
+	font-size: 1.5em;
+	margin:10px 0;
+	color:#006600;
+}
+#diagram a.more {
+	padding-top: 10px;
+	display: block;
+}
+#diagram a.more:hover {
+	text-decoration: underline;
+}
+
+.self_left2{width:560px;float:left;padding:20px;}
+.self_left2 table{font-size:14px; font-weight:bold;}
+.self_right2{width:340px;height:350x;float:left;margin-top:30px; background:url("http://www.hejianjiao.org/images/bg_preview.png") no-repeat;padding:20px 15px;}
+.self_right2 img{width:340px;height:350px;}
+.pencil{width:20px;border:none;margin-top:10px;margin-left:5px;height:20px;}
+
+
+.tooltips {
+	font-family:"微软雅黑", "黑体", "宋体";
+	font-size:12px;
+	position:relative;
+	z-index:2;
+}
+.tooltips:hover {
+	z-index:3;
+	background:none;
+}
+.tooltips span {
+	display: none;
+}
+.tooltips:hover span {
+	display:block;
+	position:absolute;
+	top:-15px;
+	left:25px;
+	width:6em;
+	border:1px solid #BEBEBE;
+	background-color: #F2F2F2;
+	color:#000;
+}
+
+
+.one {
+	width: 930px;
+	border: #87c73c solid 1px;
+	margin: 20px 0 20px 20px;
+}
+
+.one .touxiang {
+	width: 50px;
+	margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	margin-right: 0px;
+}
+.one .name {
+	width: 100px;
+	text-align: center;
+	margin-left: 23px;
+	color: #87c73c;
+}
+
+.one .host {
+	margin-top: -80px;
+	width: 100px;
+	margin-left: 150px;
+	color: #999999;
+}
+
+.one .time {
+	width: 170px;
+	margin-left: 700px;
+	margin-top: -10px;
+	font-size: 12px;
+}
+
+.one .object {
+	width: 750px;
+	margin-left: 150px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+.one #huifu {
+	width: 600px;
+	margin-left: 170px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+#angel {
+	width: 25px;
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+#reply {
+	background: #eefede;
+	width: 600px;
+	height: auto;
+	margin-top: -5px;
+}
+#reply #touxiang {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 50px;
+}
+
+#reply #contents {
+	width: 400px;
+	margin-left: 150px;
+	font-size: 12px;
+	margin-top: -240px;
+}
+
+#huifu #reply #team {
+	color: #87c73c;
+	width: 70px;
+	margin-left: 50px;
+	margin-top: -30px;
+}
+#reply #time {
+	color: #666666;
+	font-size: 10px;
+	margin:5px 0 10px 67px;
+}

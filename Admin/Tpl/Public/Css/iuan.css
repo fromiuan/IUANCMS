@@ -1,0 +1,198 @@
+.adText{
+	padding: 10px;
+	margin: 10 10;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	width: 80px;
+	border: solid 1px #66CCFF;
+}
+
+.adText span{
+	color: red;
+	text-decoration: blink;
+
+}
+.adSet{
+	width: 500px;
+	min-height: 300px;
+	border: solid 1px #CCCCCC;
+}
+.inputs{
+	margin: 20px;
+}
+.inputs span{
+	padding: 10px;
+	border-radius: 5px;
+	background: #CCCCCC;
+	text-align: center;
+	cursor: pointer;
+	border: solid 1px #333333;
+	margin: 15px; 
+}
+.isPass{
+	padding: 10px;
+	margin: 10px;
+	width: 20px;
+	height: 20px;
+}
+.checkContent{
+	margin: 15px;
+}
+.checkContent input{
+	margin: 0px 10px;
+	text-align: center;
+}
+.isLitpic{
+	width: 20px;
+	height: 20px;
+}
+
+/*modify*/
+
+.modify_litpic{
+	height: 80px;
+	padding-left: 30px;
+}
+
+/*数据备份*/
+.btn{
+	padding:5px;
+	border-radius: 5px;
+	height: 20px;
+	border-radius: 5px;
+	background: none repeat scroll 0% 0% rgb(103, 7, 104);
+	text-align: center;
+	border: solid 1px #333333;
+	margin: 10px;
+	color: white;
+}
+.data-table{
+	border: solid 1px #cccccc;
+	padding: 20px;
+	margin: 10px;
+}
+.cf{
+	padding-bottom: 20px;
+}
+.iuan_tpl{
+	margin: 20px;
+	padding: 10px;
+	float: left;
+	border: solid 1px #ccc;
+	min-height: 200px;
+	width: 170px;
+}
+.iuan_tpl span{
+	text-align: center;
+	font-size: 10px;
+	margin:10px 0px 10px 40px;
+	padding:10px 0px 10px 0px;
+}
+.iuan_tpl span p{
+	font-size: 10px;
+}
+.iuan_tpl img{
+	margin-bottom: 8px; 
+}
+.iuan_tpl_meau{
+	text-align: center;
+	font-size: 10px;
+	margin: 8px 0px 0px 0px;
+}
+.iuan_tpl_meau a{
+	color:green;
+	text-decoration:none
+}
+.iuan_tpl_all{
+	border: solid 1px #cccccc;
+	padding: 20px;
+	margin: 10px;
+	min-height: 700px;
+	clear: both;
+
+}
+.iuan_tpl_import{
+	border: solid 1px;
+	border-radius: 5px;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	background: #670768;
+	color: white;
+	margin: 5px 0px 5px 0px;
+	padding: 5px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.iuan_tpl_import a{
+	color: white;
+}
+.iuan_tpl_theme{
+	min-height: 300px;
+}
+.iuan_tpl_t{
+	background: rgb(145, 43, 43);
+	min-height: 20px;
+	padding: 7px;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	border-radius: 5px;
+}
+.iuan_tpl_other{
+	min-height: 500px;
+}
+.iuan_tpl_o{
+	background: rgb(139, 83, 22);
+	min-height: 20px;
+	padding: 7px;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	border-radius: 5px;
+}
+.iuan_file_chosefile{
+	border: solid 1px;
+	border-radius: 5px;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	background: rgba(0, 50, 0, .7);
+	color: white;
+	margin: 5px 0px 5px 0px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.All_action{
+	margin: 30px 60px;
+}
+#All_del{
+	border: solid 1px;
+	border-radius: 5px;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	background: #CC0033;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 8px;
+	cursor: pointer;
+}
+#All_pass{
+	border: solid 1px;
+	border-radius: 5px;
+	width: 120px;
+	height: 25px;
+	text-align: center;
+	background: #339999;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 8px;
+	margin-left: 30px;
+	cursor: pointer;
+}

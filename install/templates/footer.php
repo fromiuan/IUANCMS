@@ -1,0 +1,1 @@
+<div class="footer"> &copy; 2013-2014 <a href="http://www.w3cdream.com" target="_blank">http://www.w3cdream.com</a> IUAN </div>

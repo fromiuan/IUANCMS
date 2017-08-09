@@ -1,0 +1,26 @@
+<include file='Common:header'/>
+	<link rel="stylesheet" href="__TMPL__/Css/index.css" />
+<include file="Common:menu" />
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<p>后盾博文</p>
+			
+			<iuan:arctype type='top' key='k' row='6'>
+
+				<dl>
+					<dt><field name="name"/><a href="<field name="typeurl" />">更多>></a></dt>
+					<iuan:arclist typeid='~typeid~' row='8' getall='1' field="createtime" titlelen="16">
+						<dd>
+							<a href="<field name="arcurl"/>"><field name="title"/></a>
+							<span><field name="createtime" /></span>
+						</dd>
+					</iuan:arclist>
+				</dl>
+			</iuan:arctype>
+		</div>
+	<!--主体右侧-->
+	<include file='Common:right' />
+	</div>
+<!--底部-->
+<include file='Common:footer' />
